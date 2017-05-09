@@ -1,0 +1,11 @@
+# pacman -Sy	- Synchronizes the repository databases.
+# pacman -Su	- Updates the system's packages.
+# pacman -Syu
+# pacman -S	- Install packages.
+$ pacman -Si	- Informations of package
+$ pacman -Ss	- Searching both in packages' names and descriptions.
+
+$ pacman -Q	- Queries the local package database.
+$ pacman -Qs	- Search for already installed packages.
+
+

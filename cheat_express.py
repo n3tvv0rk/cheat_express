@@ -15,7 +15,7 @@ def Keyboard(event):
 	if touche == 'Return':
 		Window.destroy()
 
-pacman_file = 'documents/cheat_sheet/pacman.txt'
+pacman_file = '/home/n3tvv0rk/documents/cheat_sheet/pacman.txt'
 with open(pacman_file, 'r') as file:
 	pacman_notes = file.read()
 
