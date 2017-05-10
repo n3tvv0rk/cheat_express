@@ -26,7 +26,6 @@ def choice():
 	def keyboard(event):
 		key = event.keysym
 		if key == 'Return':
-			print('Return')
 			Window.destroy()
 
 	Window.focus_set()
@@ -40,10 +39,11 @@ def display_sheet():
 	background_color = '#3A3E3D'
 	Window2.configure(bg=background_color)
 	Window2.title("Cheat Express")
-	canvas = Canvas(Window2, width=500, height=700, background='#222222')
+	canvas = Canvas(Window2, width=1200, height=800, background='#222222')
 	with open(element_selected, "r") as blobi:
 		content_blobi = blobi.read()
-	texte1 = canvas.create_text(235, 90, text=content_blobi, font='Arial 9', fill='grey')
+	texte1 = canvas.create_text(10, 10, anchor="nw", text=content_blobi, font='Arial 9', 
+fill='grey')
 	canvas.pack()
 
 	def keyboard(event):
